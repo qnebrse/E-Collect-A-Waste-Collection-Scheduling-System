@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/fbackButton18"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/faqsbackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        app:srcCompat="@drawable/back_button"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Announcement"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/announcement_msg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="bottom"
+        android:hint="Details of Announcement"
+        android:importantForAutofill="no"
+        android:textSize="24sp"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/announcement_msg"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Insert Data"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="View Data"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnView"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Delete Data"
+        android:textSize="24sp" />
+</RelativeLayout>
